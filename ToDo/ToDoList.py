@@ -28,7 +28,11 @@ def save_tasks():
         json.dump(tasks, file)
 
 def view_tasks(tasks):
-
+    if not tasks:
+        print("No tasks exist")
+    else:
+        for index, task in enumerate(tasks, 1):
+            print("f{index}. {task}")
 
 def add_task(tasks):
 
