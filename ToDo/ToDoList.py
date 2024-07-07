@@ -35,7 +35,10 @@ def view_tasks(tasks):
             print("f{index}. {task}")
 
 def add_task(tasks):
-
+    task = input("Enter task: ")
+    tasks.append(tasks)
+    save_tasks(tasks)
+    print(f"Task '{task}' has been added")
 
 def delete_task(tasks):
 
