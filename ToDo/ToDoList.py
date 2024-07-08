@@ -41,7 +41,9 @@ def add_task(tasks):
     print(f"Task '{task}' has been added")
 
 def delete_task(tasks):
-
+    view_tasks(tasks)
+    if tasks:
+        
 
 # Main function to run the app
 def main():
