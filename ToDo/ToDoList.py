@@ -43,7 +43,14 @@ def add_task(tasks):
 def delete_task(tasks):
     view_tasks(tasks)
     if tasks:
-        
+        try:
+            task_num = int(input("Enter task number to delete"))
+            if 1 <= task_num <= len(tasks):
+                removed_task = tasks.pop(task_num - 1)
+                save_tasks(tasks)
+                print(f"Task {removed_task}' has been deleted")
+            else:
+                print("No such task exists")
 
 # Main function to run the app
 def main():
