@@ -12,7 +12,7 @@ def display_menu():
     print("1. View tasks")
     print("2. New task")
     print("3. Completed tasks")
-    print("5. Exit")
+    print("4. Exit")
 
 
 # Read file and load any existing tasks
@@ -23,7 +23,13 @@ def load_tasks():
     return []
 
 
-def save_tasks():
+def load_tasks():
+    if os.path.exists(TasksFile):
+        with open(TasksFile, 'r') as file:
+            return json.load(file)
+    return []
+
+def save_tasks(tasks):
     with open(TasksFile, 'w') as file:
         json.dump(tasks, file)
 
@@ -32,11 +38,11 @@ def view_tasks(tasks):
         print("No tasks exist")
     else:
         for index, task in enumerate(tasks, 1):
-            print("f{index}. {task}")
+            print(f"{index}. {task}")
 
 def add_task(tasks):
     task = input("Enter task: ")
-    tasks.append(tasks)
+    tasks.append(task)
     save_tasks(tasks)
     print(f"Task '{task}' has been added")
 
@@ -44,13 +50,15 @@ def delete_task(tasks):
     view_tasks(tasks)
     if tasks:
         try:
-            task_num = int(input("Enter task number to delete"))
+            task_num = int(input("Enter task number to delete: "))
             if 1 <= task_num <= len(tasks):
                 removed_task = tasks.pop(task_num - 1)
                 save_tasks(tasks)
-                print(f"Task {removed_task}' has been deleted")
+                print(f"Task '{removed_task}' has been deleted")
             else:
                 print("No such task exists")
+        except ValueError:
+            print("Please enter a valid number.")
 
 # Main function to run the app
 def main():
