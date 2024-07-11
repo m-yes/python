@@ -11,7 +11,7 @@ def display_menu():
     print("\nTo-Do List App:")
     print("1. View tasks")
     print("2. New task")
-    print("3. Completed tasks")
+    print("3. Complete task")
     print("4. Exit")
 
 
