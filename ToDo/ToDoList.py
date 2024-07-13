@@ -30,10 +30,10 @@ def save_tasks(tasks):
         json.dump(tasks, file)
 
 def view_tasks(tasks):
-    if not tasks:
+    if not tasks["tasks"]:
         print("No tasks exist")
     else:
-        for index, task in enumerate(tasks, 1):
+        for index, task in enumerate(tasks["tasks"], 1):
             print(f"{index}. {task}")
 
 def view_completed_tasks(tasks):
@@ -46,29 +46,35 @@ def view_completed_tasks(tasks):
 
 def add_task(tasks):
     task = input("Enter task: ")
-    tasks.append(task)
+    # Append to "tasks" list within the dict
+    tasks["tasks"].append(task)
     save_tasks(tasks)
     print(f"Task '{task}' has been added")
 
+
+# This marks a task as "completed" by moving it to the "completed" list
 def complete_task(tasks):
     view_tasks(tasks)
     if tasks:
         try:
-            task_num = int(input("Enter task number to delete: "))
+            task_num = int(input("Enter task number to complete: "))
             if 1 <= task_num <= len(tasks):
-                removed_task = tasks.pop(task_num - 1)
+                completed_task = tasks["tasks"].pop(task_num - 1)
+                # Append to "completed" list within the dict
+                tasks["completed"].append(completed_task)
                 save_tasks(tasks)
-                print(f"Task '{removed_task}' has been deleted")
+                print(f"Task '{completed_task}' has been completed")
             else:
                 print("No such task exists")
         except ValueError:
             print("Please enter a valid number.")
 
 
+# This deletes all tasks that have been marked completed
 def delete_completed_tasks(tasks):
     tasks["completed"].clear()
     save_tasks(tasks)
-    print("Completed tasks have been deleted")
+    print("All completed tasks have been deleted")
 
 
 # Main function to run the app
