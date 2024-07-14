@@ -1,7 +1,10 @@
 # To Do List Application
 
+
 import json
 import os
+import tkinter as tk
+
 
 # File to store to do tasks
 TasksFile = "tasks.json"
@@ -29,12 +32,14 @@ def save_tasks(tasks):
     with open(TasksFile, 'w') as file:
         json.dump(tasks, file)
 
+
 def view_tasks(tasks):
     if not tasks["tasks"]:
         print("No tasks exist")
     else:
         for index, task in enumerate(tasks["tasks"], 1):
             print(f"{index}. {task}")
+
 
 def view_completed_tasks(tasks):
     if not tasks["completed"]:
@@ -43,6 +48,7 @@ def view_completed_tasks(tasks):
         print("Completed Tasks:")
         for index, task in enumerate(tasks["completed"], 1):
             print(f"{index}. {task}")
+
 
 def add_task(tasks):
     task = input("Enter task: ")
@@ -104,5 +110,28 @@ def main():
             print("Please enter a valid number.")
 
 
+# GUI for app
+root = tk.Tk()
+
+
+root.geometry("300x300")
+root.title("To-Do List")
+
+
+label = tk.Label(root, text="To-Do List", font=("Helvetica", 18))
+label.pack()
+
+
+textbox = tk.Text(root, font=("Helvetica", 16), height=5, width=50)
+textbox.pack(padx=10)
+
+
+button = tk.Button(root, text="View tasks", command=display_menu)
+button.pack()
+
+root.mainloop()
+
+
 if __name__ == "__main__":
     main()
+
