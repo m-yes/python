@@ -110,7 +110,7 @@ def main():
             print("Please enter a valid number.")
 
 
-# GUI for app
+# GUI interface for app
 root = tk.Tk()
 
 
@@ -129,9 +129,9 @@ textbox.pack(padx=10)
 button = tk.Button(root, text="View tasks", command=display_menu)
 button.pack()
 
+
 root.mainloop()
 
 
 if __name__ == "__main__":
     main()
-
