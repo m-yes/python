@@ -110,6 +110,17 @@ def main():
             print("Please enter a valid number.")
 
 
+class GUI:
+
+    def __init__(self):
+
+        self.root = tk.Tk()
+
+        
+
+        self.root.mainloop()
+
+
 # GUI interface for app
 root = tk.Tk()
 
@@ -126,8 +137,33 @@ textbox = tk.Text(root, font=("Helvetica", 16), height=5, width=50)
 textbox.pack(padx=10)
 
 
-button = tk.Button(root, text="View tasks", command=display_menu)
+# Press button to display menu
+button = tk.Button(root, text="Show Menu", command=display_menu)
 button.pack()
+
+buttonframe = tk.Frame(root)
+buttonframe.columnconfigure(0, weight=1)
+buttonframe.rowconfigure(0, weight=1)
+buttonframe.columnconfigure(1, weight=1)
+buttonframe.rowconfigure(1, weight=1)
+buttonframe.columnconfigure(2, weight=1)
+buttonframe.rowconfigure(2, weight=1)
+
+btn1 = tk.Button(buttonframe, text="1", font=("Helvetica", 18))
+# Sticky to stretch the buttons across the whole row
+btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
+
+btn1 = tk.Button(buttonframe, text="2", font=("Helvetica", 18))
+# Sticky to stretch the buttons across the whole row
+btn1.grid(row=1, column=0, sticky=tk.W+tk.E)
+
+btn1 = tk.Button(buttonframe, text="3", font=("Helvetica", 18))
+# Sticky to stretch the buttons across the whole row
+btn1.grid(row=2, column=0, sticky=tk.W+tk.E)
+
+
+# Stretch into x-axis
+buttonframe.pack(fill='x')
 
 
 root.mainloop()
