@@ -5,6 +5,7 @@ import json
 import os
 import tkinter as tk
 
+import setuptools
 
 # File to store to do tasks
 TasksFile = "tasks.json"
@@ -115,6 +116,14 @@ class GUI:
     def __init__(self):
 
         self.root = tk.Tk()
+
+        self.label = tk.Label(self.root, text="To-Do List", font=("Helvetica", 20))
+        self.label.pack(padx=12, pady=12)
+
+        self.textbox = tk.Text(self.root, height=5, font=("Helvetica",16))
+        self.textbox.pack()
+
+        self.check_state = tk.IntVar()
 
         
 
