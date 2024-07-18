@@ -120,15 +120,20 @@ class GUI:
         self.label = tk.Label(self.root, text="To-Do List", font=("Helvetica", 20))
         self.label.pack(padx=12, pady=12)
 
-        self.textbox = tk.Text(self.root, height=5, font=("Helvetica",16))
+        self.textbox = tk.Text(self.root, height=5, font=("Helvetica", 16))
         self.textbox.pack()
 
         self.check_state = tk.IntVar()
 
-        
+        self.check_button = tk.Checkbutton(self.root, text="View Tasks", font=("Heltecia", 16), variable=self.check_state)
+        self.check_button.pack()
+
+        self.button = tk.Button(self.root, text="View Tasks", font=("Helvetica", 16))
+        self.button.pack(padx=12, pady=12)
 
         self.root.mainloop()
 
+def view_tasks_button(self)
 
 # GUI interface for app
 root = tk.Tk()
