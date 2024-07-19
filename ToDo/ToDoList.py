@@ -14,7 +14,7 @@ TasksFile = "tasks.json"
 def display_menu():
     print("\nTo-Do List App:")
     print("1. View tasks")
-    print("2. New task")
+    print("2. Add new task")
     print("3. Complete task")
     print("4. View completed tasks")
     print("5. Delete all completed task")
@@ -133,7 +133,8 @@ class GUI:
 
         self.root.mainloop()
 
-def view_tasks_button(self)
+def view_tasks_button(self):
+
 
 # GUI interface for app
 root = tk.Tk()
