@@ -111,6 +111,7 @@ def main():
             print("Please enter a valid number.")
 
 
+# GUI interface
 class GUI:
 
     def __init__(self):
