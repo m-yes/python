@@ -153,6 +153,7 @@ textbox = tk.Text(root, font=("Helvetica", 16), height=5, width=50)
 textbox.pack(padx=10)
 
 
+'''
 # Press button to display menu
 button = tk.Button(root, text="Show Menu", command=display_menu)
 button.pack()
@@ -183,6 +184,7 @@ buttonframe.pack(fill='x')
 
 
 root.mainloop()
+'''
 
 
 if __name__ == "__main__":
