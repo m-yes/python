@@ -134,7 +134,11 @@ class GUI:
 
         self.root.mainloop()
 
-def view_tasks_button(self):
+    def view_tasks_button(self):
+        if self.check_state.get() == 0:
+            print(self.textbox.get("1.0", tk.END))
+        else:
+            messagebox.showinfo(title="Task", message=self.textbox.get("1.0", tk.END))
 
 
 # GUI interface for app
@@ -153,7 +157,6 @@ textbox = tk.Text(root, font=("Helvetica", 16), height=5, width=50)
 textbox.pack(padx=10)
 
 
-'''
 # Press button to display menu
 button = tk.Button(root, text="Show Menu", command=display_menu)
 button.pack()
@@ -184,7 +187,6 @@ buttonframe.pack(fill='x')
 
 
 root.mainloop()
-'''
 
 
 if __name__ == "__main__":
