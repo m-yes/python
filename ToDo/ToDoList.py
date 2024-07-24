@@ -123,6 +123,7 @@ class GUI:
         self.label.pack(padx=12, pady=12)
 
         self.textbox = tk.Text(self.root, height=5, font=("Helvetica", 16))
+        self.textbox.bind("<KeyPress>", self.shortcut)
         self.textbox.pack()
 
         self.check_state = tk.IntVar()
@@ -134,6 +135,10 @@ class GUI:
         self.button.pack(padx=12, pady=12)
 
         self.root.mainloop()
+
+    def shortcut(self, event):
+        pass
+
 
     def view_tasks_button(self):
         if self.check_state.get() == 0:
