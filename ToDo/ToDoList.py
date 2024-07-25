@@ -136,6 +136,7 @@ class GUI:
 
         self.root.mainloop()
 
+
     def shortcut(self, event):
         pass
 
