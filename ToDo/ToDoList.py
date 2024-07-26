@@ -5,7 +5,6 @@ import json
 import os
 import tkinter as tk
 from tkinter import messagebox
-
 import setuptools
 
 # File to store to do tasks
@@ -196,5 +195,6 @@ buttonframe.pack(fill='x')
 root.mainloop()
 
 
+# Main function
 if __name__ == "__main__":
     main()
