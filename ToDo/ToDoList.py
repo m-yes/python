@@ -11,6 +11,7 @@ import setuptools
 TasksFile = "tasks.json"
 
 
+# Main menu
 def display_menu():
     print("\nTo-Do List App:")
     print("1. View tasks")
