@@ -6,14 +6,19 @@ import os
 import tkinter as tk
 from tkinter import messagebox
 import setuptools
+import datetime
 
 # File to store to do tasks
 TasksFile = "tasks.json"
 
 
+today = datetime.date.today()
+
+
 # Main menu
 def display_menu():
     print("\nTo-Do List App:")
+    print("\n", today, "\n")
     print("1. View tasks")
     print("2. Add new task")
     print("3. Complete task")
