@@ -133,6 +133,7 @@ class GUI:
 
         self.check_state = tk.IntVar()
 
+        # View tasks button 
         self.check_button = tk.Checkbutton(self.root, text="View Tasks", font=("Heltecia", 16), variable=self.check_state)
         self.check_button.pack()
 
