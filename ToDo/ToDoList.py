@@ -158,7 +158,7 @@ class GUI:
 root = tk.Tk()
 
 
-root.geometry("300x300")
+root.geometry("300x500")
 root.title("To-Do List")
 
 
