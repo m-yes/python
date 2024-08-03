@@ -189,14 +189,14 @@ btn1 = tk.Button(buttonframe, text="1", font=("Helvetica", 18))
 btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
 
 
-btn1 = tk.Button(buttonframe, text="2", font=("Helvetica", 18))
+btn2 = tk.Button(buttonframe, text="2", font=("Helvetica", 18))
 # Sticky to stretch the buttons across the whole row
-btn1.grid(row=1, column=0, sticky=tk.W+tk.E)
+btn2.grid(row=1, column=0, sticky=tk.W+tk.E)
 
 
-btn1 = tk.Button(buttonframe, text="3", font=("Helvetica", 18))
+btn3 = tk.Button(buttonframe, text="3", font=("Helvetica", 18))
 # Sticky to stretch the buttons across the whole row
-btn1.grid(row=2, column=0, sticky=tk.W+tk.E)
+btn3.grid(row=2, column=0, sticky=tk.W+tk.E)
 
 
 # Stretch into x-axis
