@@ -162,7 +162,7 @@ root.geometry("300x400")
 root.title("To-Do List")
 
 
-label = tk.Label(root, text="To-Do List", font=("Helvetica", 18))
+label = tk.Label(root, text="To-Do List", font=("Helvetica", 20))
 label.pack()
 
 
