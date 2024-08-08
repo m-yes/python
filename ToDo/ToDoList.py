@@ -185,6 +185,7 @@ buttonframe.rowconfigure(2, weight=1)
 buttonframe.columnconfigure(2, weight=1)
 buttonframe.rowconfigure(2, weight=1)
 
+
 btn1 = tk.Button(buttonframe, text="1", font=("Helvetica", 18))
 # Sticky to stretch the buttons across the whole row
 btn1.grid(row=0, column=0, sticky=tk.W+tk.E)
