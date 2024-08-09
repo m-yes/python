@@ -206,6 +206,11 @@ btn4 = tk.Button(buttonframe, text="4", font=("Helvetica", 18))
 btn4.grid(row=2, column=0, sticky=tk.W+tk.E)
 
 
+btn5 = tk.Button(buttonframe, text="5", font=("Helvetica", 18))
+# Sticky to stretch the buttons across the whole row
+btn5.grid(row=2, column=0, sticky=tk.W+tk.E)
+
+
 # Stretch into x-axis
 buttonframe.pack(fill='x')
 
