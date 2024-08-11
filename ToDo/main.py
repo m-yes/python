@@ -3,7 +3,7 @@ from menu import Menu
 
 def main():
     menu = GUI()
-    # menu = Menu()  # Uncomment this to use the console version
+    # menu = Menu()  # Uncomment to use the console version
 
     '''
     while True:
