@@ -26,7 +26,7 @@ def main():
                 print("Have a productive day!")
                 break
             else:
-                print("Invalid choice. Please enter a number between 1 and 6.")
+                print("Invalid choice! Please enter a number between 1 and 6.")
         except ValueError:
             print("Please enter a valid number.")
     '''
