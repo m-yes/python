@@ -55,7 +55,7 @@ class Menu:
         self.view_tasks()
         if self.tasks["tasks"]:
             try:
-                task_num = int(input("Enter task number to complete: "))
+                task_num = int(input("Enter the task number you want to complete: "))
                 if 1 <= task_num <= len(self.tasks["tasks"]):
                     completed_task = self.tasks["tasks"].pop(task_num - 1)
                     self.tasks["completed"].append(completed_task)
