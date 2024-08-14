@@ -9,7 +9,7 @@ class GUI:
         self.root.geometry("300x500")
         self.root.title("To-Do List")
 
-        self.label = tk.Label(self.root, text="To-Do List", font=("Helvetica", 20))
+        self.label = tk.Label(self.root, text="To-Do List: ", font=("Helvetica", 20))
         self.label.pack(padx=12, pady=12)
 
         self.textbox = tk.Text(self.root, height=5, font=("Helvetica", 16))
