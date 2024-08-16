@@ -6,7 +6,7 @@ class GUI:
     def __init__(self):
         self.menu = Menu()
         self.root = tk.Tk()
-        self.root.geometry("300x550")
+        self.root.geometry("330x550")
         self.root.title("To-Do List")
 
         self.label = tk.Label(self.root, text="To-Do List: ", font=("Helvetica", 20))
