@@ -12,7 +12,7 @@ class GUI:
         self.label = tk.Label(self.root, text="To-Do List: ", font=("Helvetica", 20))
         self.label.pack(padx=12, pady=12)
 
-        self.textbox = tk.Text(self.root, height=5, font=("Helvetica", 16))
+        self.textbox = tk.Text(self.root, height=6, font=("Helvetica", 16))
         self.textbox.pack()
 
         self.view_tasks_button = tk.Button(self.root, text="View Tasks", font=("Helvetica", 16), command=self.view_tasks)
