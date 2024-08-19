@@ -7,7 +7,7 @@ class GUI:
         self.menu = Menu()
         self.root = tk.Tk()
         self.root.geometry("333x550")
-        self.root.title("To-Do List")
+        self.root.title("Minimalist \nTo-Do List")
 
         self.label = tk.Label(self.root, text="To-Do List: ", font=("Helvetica", 20))
         self.label.pack(padx=12, pady=12)
