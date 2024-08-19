@@ -12,22 +12,22 @@ class GUI:
         self.label = tk.Label(self.root, text="To-Do List: ", font=("Helvetica", 20))
         self.label.pack(padx=12, pady=12)
 
-        self.textbox = tk.Text(self.root, height=6, font=("Helvetica", 16))
+        self.textbox = tk.Text(self.root, height=6, font=("Helvetica", 14))
         self.textbox.pack()
 
-        self.view_tasks_button = tk.Button(self.root, text="View Tasks", font=("Helvetica", 16), command=self.view_tasks)
+        self.view_tasks_button = tk.Button(self.root, text="View Tasks", font=("Helvetica", 14), command=self.view_tasks)
         self.view_tasks_button.pack(padx=12, pady=12)
 
-        self.add_task_button = tk.Button(self.root, text="Add Task", font=("Helvetica", 16), command=self.add_task)
+        self.add_task_button = tk.Button(self.root, text="Add Task", font=("Helvetica", 14), command=self.add_task)
         self.add_task_button.pack(padx=12, pady=12)
 
-        self.complete_task_button = tk.Button(self.root, text="Complete Task", font=("Helvetica", 16), command=self.complete_task)
+        self.complete_task_button = tk.Button(self.root, text="Complete Task", font=("Helvetica", 14), command=self.complete_task)
         self.complete_task_button.pack(padx=12, pady=12)
 
-        self.delete_completed_button = tk.Button(self.root, text="Delete Completed Tasks", font=("Helvetica", 16), command=self.delete_completed_tasks)
+        self.delete_completed_button = tk.Button(self.root, text="Delete Completed Tasks", font=("Helvetica", 14), command=self.delete_completed_tasks)
         self.delete_completed_button.pack(padx=12, pady=12)
 
-        self.exit_button = tk.Button(self.root, text="Exit", font=("Helvetica", 16), command=self.root.quit)
+        self.exit_button = tk.Button(self.root, text="Exit", font=("Helvetica", 14), command=self.root.quit)
         self.exit_button.pack(padx=12, pady=12)
 
         self.root.mainloop()
