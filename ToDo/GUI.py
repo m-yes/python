@@ -71,5 +71,5 @@ class GUI:
                 messagebox.showwarning("Warning", "No such task exists")
                 return None
         except ValueError:
-            messagebox.showwarning("Warning", "Please enter a valid number")
+            messagebox.showwarning("Warning", "Please enter a valid task number")
             return None
