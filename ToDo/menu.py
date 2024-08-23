@@ -46,7 +46,7 @@ class Menu:
                 print(f"{index}. {task}")
 
     def add_task(self):
-        task = input("Enter task: ")
+        task = input("Please enter task: ")
         self.tasks["tasks"].append(task)
         self.save_tasks()
         print(f"Task '{task}' has been added")
