@@ -62,7 +62,7 @@ class Menu:
                     self.save_tasks()
                     print(f"Task '{completed_task}' has been completed")
                 else:
-                    print("No such task exists")
+                    print("No such task exists. Please enter a valid task number")
             except ValueError:
                 print("Please enter a valid number.")
 
