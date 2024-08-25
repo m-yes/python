@@ -32,7 +32,7 @@ class Menu:
 
     def view_tasks(self):
         if not self.tasks["tasks"]:
-            print("No tasks exist")
+            print("You don't have any tasks")
         else:
             for index, task in enumerate(self.tasks["tasks"], 1):
                 print(f"{index}. {task}")
