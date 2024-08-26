@@ -39,7 +39,7 @@ class Menu:
 
     def view_completed_tasks(self):
         if not self.tasks["completed"]:
-            print("No completed tasks exist")
+            print("You have no completed tasks")
         else:
             print("Completed Tasks:")
             for index, task in enumerate(self.tasks["completed"], 1):
