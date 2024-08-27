@@ -41,7 +41,7 @@ class Menu:
         if not self.tasks["completed"]:
             print("You have no completed tasks")
         else:
-            print("Completed Tasks:")
+            print("All you completed Tasks:")
             for index, task in enumerate(self.tasks["completed"], 1):
                 print(f"{index}. {task}")
 
