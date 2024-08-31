@@ -21,7 +21,7 @@ class ConsoleMenu:
             elif choice == '3':
                 self.remove_task()
             elif choice == '4':
-                print("Exiting...")
+                print("Have a productive Day! Exiting...")
                 break
             else:
                 print("Invalid option. Please try again.")
