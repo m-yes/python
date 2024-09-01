@@ -29,7 +29,7 @@ class ConsoleMenu:
     def list_tasks(self):
         tasks = self.task_manager.get_tasks()
         if not tasks:
-            print("No tasks available.")
+            print("No tasks available. Please add tasks.")
         else:
             print("Tasks:")
             for i, task in enumerate(tasks, 1):
