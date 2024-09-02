@@ -12,3 +12,7 @@ class TaskManager:
     def remove_task(self, task):
         if task in self.tasks:
             self.tasks.remove(task)
+
+    def remove_all_tasks(self):
+        self.tasks.clear()
+        print("All tasks have been removed.")
