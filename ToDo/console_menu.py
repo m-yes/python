@@ -7,8 +7,8 @@ class ConsoleMenu:
             print("\nTo-Do App Menu:")
             print("1. Add Task")
             print("2. List Tasks")
-            print("3. Remove Task")
-            print("4. Remove All Tasks")
+            print("3. Complete Task")
+            print("4. Complete All Tasks")
             print("5. Exit")
             choice = input("Select an option: ")
 
@@ -40,23 +40,23 @@ class ConsoleMenu:
     def remove_task(self):
         tasks = self.task_manager.get_tasks()
         if not tasks:
-            print("No tasks to remove.")
+            print("No tasks to complete. Please add tasks.")
             return
         self.list_tasks()
         try:
-            task_number = int(input("Enter the task number to remove: "))
+            task_number = int(input("Enter the task number to complete: "))
             task = tasks[task_number - 1]
             self.task_manager.remove_task(task)
-            print(f"Task removed: {task}")
+            print(f"Task completed: {task}")
         except (ValueError, IndexError):
             print("Invalid task number.")
 
     def remove_all_tasks(self):
         tasks = self.task_manager.get_tasks()
         if not tasks:
-            print("No tasks to remove.")
+            print("No tasks to complete.")
         else:
-            confirm = input("Are you sure you want to remove all tasks? (y/n): ")
+            confirm = input("Are you sure you want to complete all tasks? (y/n): ")
             if confirm.lower() == 'y':
                 self.task_manager.remove_all_tasks()
             else:
