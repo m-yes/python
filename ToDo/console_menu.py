@@ -4,7 +4,7 @@ class ConsoleMenu:
 
     def show_menu(self):
         while True:
-            print("\nTo-Do App Menu:")
+            print("\n*****TO-DO*****")
             print("1. Add Task")
             print("2. List Tasks")
             print("3. Complete Task")
