@@ -56,7 +56,7 @@ class ConsoleMenu:
         if not tasks:
             print("No tasks to complete. Please add tasks.")
         else:
-            confirm = input("Are you sure you want to complete all tasks? (y/n): ")
+            confirm = input("Are you sure you want to complete ALL tasks? (y/n): ")
             if confirm.lower() == 'y':
                 self.task_manager.remove_all_tasks()
             else:
