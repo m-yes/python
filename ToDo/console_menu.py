@@ -13,7 +13,7 @@ class ConsoleMenu:
             choice = input("Select an option: ")
 
             if choice == '1':
-                task = input("Enter the task: ")
+                task = input("PLease enter the task: ")
                 self.task_manager.add_task(task)
                 print(f"Task successfully added: {task}")
             elif choice == '2':
