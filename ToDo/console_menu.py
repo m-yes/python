@@ -15,7 +15,7 @@ class ConsoleMenu:
             if choice == '1':
                 task = input("Enter the task: ")
                 self.task_manager.add_task(task)
-                print(f"Task added: {task}")
+                print(f"Task successfully added: {task}")
             elif choice == '2':
                 self.list_tasks()
             elif choice == '3':
