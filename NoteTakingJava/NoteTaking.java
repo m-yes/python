@@ -50,7 +50,7 @@ public class NoteTaking
         System.out.println("Please enter note below: \n");
         String newNote = scanner.nextLine();
         notes.add(newNote);
-        System.out.println("Note added.");
+        System.out.println("Note added." + newNote + "\n");
     }
 
     private static void displayAllNotes()
