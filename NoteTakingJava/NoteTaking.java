@@ -55,7 +55,7 @@ public class NoteTaking
 
     private static void displayAllNotes()
     {
-        System.out.println("All notes:");
+        System.out.println("All notes: ");
         for (String note : notes)
         {
             System.out.println(note + "\n");
