@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 * NoteTaking class.
 *
-* Lets the user enter notes, display notes. 
+* Lets the user enter and display notes.
  */
 
 public class NoteTaking
@@ -62,3 +62,4 @@ public class NoteTaking
         }
     }
 }
+
