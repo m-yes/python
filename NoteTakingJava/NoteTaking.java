@@ -71,7 +71,7 @@ public class NoteTaking {
 
     private void displayAllNotes() {
         if (notes.isEmpty()) {
-            System.out.println("No notes available.\n");
+            System.out.println("You don't have any notes. Please add notes first.\n");
         } else {
             System.out.println("All notes:");
             for (String note : notes) {
