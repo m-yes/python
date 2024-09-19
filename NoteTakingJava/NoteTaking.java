@@ -63,7 +63,7 @@ public class NoteTaking {
     }
 
     private void createNewNote() {
-        System.out.println("Please enter your note below: ");
+        System.out.println("Please enter your note here: ");
         String newNote = scanner.nextLine();
         notes.add(newNote);
         System.out.println("Note added: " + newNote + "\n");
