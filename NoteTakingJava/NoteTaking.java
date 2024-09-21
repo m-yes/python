@@ -53,10 +53,10 @@ public class NoteTaking {
                 if (option >= 1 && option <= 3) {
                     break;
                 } else {
-                    System.out.println("Invalid option. Please enter 1, 2, or 3.");
+                    System.out.println("Invalid input. Please enter 1, 2, or 3.");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a number.");
+                System.out.println("Invalid input. Please enter 1, 2, or 3.");
             }
         }
         return option;
